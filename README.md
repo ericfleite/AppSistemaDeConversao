@@ -5,7 +5,7 @@
 **Assista ao Video**
 :movie_camera: (https://youtu.be/HLz1xwR2WLs)
 
-🚀 **Status**
+🚀 **Status:**
 
 ✔️App Concluido
 ❌Readme em Construção
