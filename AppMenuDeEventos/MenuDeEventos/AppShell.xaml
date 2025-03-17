@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MenuDeEventos.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MenuDeEventos"
+    xmlns:pages="clr-namespace:MenuDeEventos.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MenuDeEventos"
+    Shell.FlyoutBackground="Aquamarine">
+
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout>
+        <Image Source="logo.png"
+               WidthRequest="100"
+               HeightRequest="100"/>
+
+        <Label
+            Text="Sistema de Conversão"
+            HorizontalTextAlignment="Center"
+            FontSize="20"
+            FontAttributes="Bold"/>
+        </VerticalStackLayout>
+
+
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="MENU PRINCIPAL"
+                FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" 
+            Icon="casa.png"/>
+
+        <ShellContent
+            Title="Kilometros > Metros"
+            ContentTemplate="{DataTemplate pages:KilometrosMetros}"
+            Route="KilometrosMetros"
+            Icon="calculadora.png"/>
+
+        <ShellContent
+            Title="Metros > Centimetros"
+            ContentTemplate="{DataTemplate pages:MetrosCentimetros}"
+            Route="MetrosCentimetros"
+            Icon="calculadora.png"/>
+
+        <ShellContent
+            Title="Hectometros > Metros"
+            ContentTemplate="{DataTemplate pages:HectometrosMetros}"
+            Route="HectometrosMetros"
+            Icon="calculadora.png"/>
+
+        <ShellContent
+            Title="Sobre"
+            ContentTemplate="{DataTemplate pages:Sobre}"
+            Route="Sobre"
+            Icon="sobre.png"/>
+
+
+    </FlyoutItem>
+
+    
+
+</Shell>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuDeEventos.Pages.Sobre"
+             Title="Sobre">
+    <VerticalStackLayout
+    Padding="30,0"
+    Spacing="15"
+    BackgroundColor="LightGray">
+
+        <Image
+        Source="sobre.png"
+        HeightRequest="185"
+        Aspect="AspectFit"/>
+
+        <Label 
+        Text="Sobre"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" 
+        Style="{StaticResource Headline}"
+        SemanticProperties.HeadingLevel="Level1" />
+
+        <Label
+            Text="Eric Ferreira Leite"/>
+
+        <Label
+            Text="RA: 2411117"/>
+        <Label
+            Text="Desenvolvimento Mobile Android"/>
+
+        <Label
+            Text="Estudante da faculdade Anchieta Jundiaí, segundo semestre, formado como técnico em eletrônica. Tenho o sonho de ser desenvolvedor."/>
+
+        <Label
+            Text="Aplicativo Sistema de Conversão"/>
+
+        <Label
+            Text="O objetivo do aplicativo é fazer conversões de distâncias, metros para centímetros, hectômetros para metros e quilômetros para metros. 
+Foi utilizado o .NET Maui para o desenvolvimento do app."/>
+
+        <Label
+            Text="Obrigado professor Juliano, por ensinar e me motivar a aprender mais sobre o assunto."/>
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

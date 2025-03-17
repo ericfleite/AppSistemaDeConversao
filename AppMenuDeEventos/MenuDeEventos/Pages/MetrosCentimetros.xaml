@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenuDeEventos.Pages.MetrosCentimetros"
+             Title="MetrosCentimetros">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="15"
+        BackgroundColor="LightGray">
+
+        <Image
+            Source="calcular.png"
+            HeightRequest="185"
+            Aspect="AspectFit"/>
+
+        <Label 
+            Text="Metros > Centímetros "
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Style="{StaticResource Headline}"
+            SemanticProperties.HeadingLevel="Level1" />
+
+        <Label
+            x:Name="lblMetros"
+            Text="Metros"/>
+
+        <Entry
+            x:Name="etrMetrosParaCentimetros"
+            Placeholder="Digite os metros"
+            BackgroundColor="White"
+            HorizontalTextAlignment="End"/>
+
+        <Label
+            x:Name="lblResultadoMetrosCentimetros"
+            Text="Resultado da Conversão"/>
+
+        <Entry
+            x:Name="etrResultadoMetrosCentimetros"
+            BackgroundColor="White"
+            IsEnabled="False"
+            TextColor="Black"
+            HorizontalTextAlignment="End"/>
+
+        <Grid
+    ColumnSpacing="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                x:Name="btnLimparMetrosCentimetros"
+                Text="Limpar"
+                Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="#22C3AF"
+                Clicked="OnLimparKilometrosMetrosClicked"/>
+
+            <Button
+                x:Name="btnCalcularMetrosCentimetros"
+                Text="Calcular"
+                Grid.Row="0"
+                Grid.Column="1"
+                BackgroundColor="#22C3AF"
+                Clicked="OnCalcularKilometrosMetrosClicked"/>
+
+
+        </Grid>
+
+
+    </VerticalStackLayout>
+</ContentPage>
